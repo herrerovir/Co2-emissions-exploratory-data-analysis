@@ -1,154 +1,186 @@
-# 🏭🌱 CO<sub>2</sub> emissions over the past 50 years
+# 🗺️🌱 CO₂ Emissions Over the Past 50 Years
 
-This repository contains an exploratory data analysis of carbon dioxide emissions over the last 50 years using Python. 
+This repository contains an exploratory data analysis (EDA) of carbon dioxide (CO₂) emissions over the last 50 years using Python. The goal is to extract meaningful insights about the trends, sources, and drivers of CO₂ emissions worldwide.
 
-## Table of content
- - [Intro](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Introduction)
- - [Goal](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Goal)
- - [Project overview](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Project-Overview)
- - [Dependencies](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Dependencies)
- - [Technical skills](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Technical-skills)
- - [Dataset](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Data-set)
- - [Data loading](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Data-loading)
- - [Data cleaning](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Data-cleaning)
- - [Data exploration](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Data-exploration)
- - [Data visualization](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Data-visualization)
- - [Insights](https://github.com/herrerovir/Python-co2-emissions/blob/main/README.md#Insights)
+## 📚 Table of Contents
 
-## Introduction
-Carbon dioxide (CO<sub>2</sub>) is a colorless, odorless, non-poisonous gas formed by the combustion of carbon and is considered a greenhouse gas. Greenhouse gases absorb infrared radiation and emit it back to Earth, increasing the temperature of the Earth's surface. This is known as the greenhouse effect. 
+- [Introduction](#introduction)
+- [Goal](#goal)
+- [Project Overview](#project-overview)
+- [Dependencies](#dependencies)
+- [How to Run the Project](#how-to-run-the-project)
+- [Repository Structure](#repository-structure)
+- [Technical Skills](#technical-skills)
+- [Dataset](#dataset)
+- [Data Loading](#data-loading)
+- [Data Cleaning](#data-cleaning)
+- [Data Exploration](#data-exploration)
+- [Data Visualization](#data-visualization)
+- [Key Insights](#key-insights)
 
-Emissions are the release of greenhouse gases into the atmosphere over a given area and time period. Carbon dioxide emissions or CO<sub>2</sub> emissions are emissions from the combustion of fossil fuels (coal, oil and gas) and the manufacture of cement.
+## 📖 Introduction
 
-Carbon dioxide emissions are the main cause of global warming.  Since the industrial revolution, the burning of fossil fuels has increased, which is directly correlated with the increase of carbon dioxide levels in the atmosphere and, therefore, with the rapid increase of global warming.
+CO₂ is a colorless, odorless gas that's a significant contributor to climate change. It's released during the burning of fossil fuels like coal, oil, and gas, and plays a major role in the greenhouse effect, which warms our planet.
 
-## Goal
-The main objective of this project is to conduct an exploratory analysis of carbon dioxide emissions over the last 50 years to discover valuable information about carbon emissions and the factors that influence them. 
+Since the industrial revolution, human activities have significantly increased CO₂ levels in the atmosphere, directly contributing to global warming. This project uses data analysis to examine how CO₂ emissions have changed over time, identify major emitters, and understand the factors influencing these trends.
 
-Through data exploration and analysis, it is expected to find answers to the following key points:
+## 🎯 Goal
 
-* Evolution of CO<sub>2</sub> emissions by year
-* Evolution of CO<sub>2</sub> emissions by continent
-* Main CO<sub>2</sub> emitters
-* Main source of CO<sub>2</sub> emissions
-* Factors influencing (positively or negatively) on CO<sub>2</sub> emissions
+The primary objective of this project is to conduct an exploratory analysis of CO₂ emissions over the past 50 years to uncover valuable insights about emission trends and their influencing factors.
 
-## Project overview
-1. Data loading
-2. Data cleaning
-3. Data analysis
-4. Insights
+Key questions addressed include:
 
-## Dependencies
-The following tools are required to carry out this project:
+- How have CO₂ emissions evolved by year and continent?
+- Which countries are the largest emitters?
+- What are the primary sources of CO₂ emissions?
+- How do factors like GDP and population influence CO₂ emissions?
 
-* Python 3
-* Jupyter Notebooks
-* Python libraries: 
-    - Numpy
-    - Pandas
-    - Matplotlib.pyplot
-    - Seaborn
+## 🔍 Project Overview
 
-## Technical skills
-Throughout the implementation of this project, the following skills were applied: 
+The project is structured into four main phases:
 
-* Data loading
-* Data cleaning
-* Data exploration
-* Data analysis
-* Data visualization
+1. **Data Loading**: Importing the dataset into Python.
+2. **Data Cleaning**: Preparing the data for analysis by handling missing values, correcting data types, and filtering relevant information.
+3. **Data Exploration**: Performing exploratory data analysis to identify patterns and relationships within the data.
+4. **Insights**: Drawing conclusions and highlighting key findings from the analysis.
 
-## Dataset
-The dataset used for this analysis is a CSV file which can be found uploaded in this repository as co2-emissions-dataset.
+## 🛠️ Dependencies
 
-The dataset consists of:
-* 46523 entries
-* 74 columns
+To run this project, you'll need:
 
-## Data loading
-The CSV dataset is loaded into Jupyter Notebooks as a Pandas DataFrame. 
+- Python 3
+- Jupyter Notebooks (for interactive analysis)
+- Python libraries:
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `seaborn`
 
-## Data cleaning
-Once the data is loaded, it must undergo a cleaning and preprocessing phase. This part of the analysis is essential and critical, as a clean and normalized data set will ensure data integrity and reliability. 
+## 💻 How to Run the Project
 
-The cleaning workflow includes: remove and rename columns, filter data by year, change data types, and remove null and duplicated values.
+1. **Clone the Repository**
 
-## Data exploration
-To obtain useful information from this dataset, an in-depth exploratory analysis was carried out. The dataset was analyzed in a univariate and bivariate basis.
+   Start by cloning the repository to your local machine using the following command:
 
-Univariate analysis involved analyzing each variable in the dataset separately.
+   ```shell
+   git clone https://github.com/herrerovir/Co2-emissions-exploratory-data-analysis.git
+   ```
 
-The bivariate analysis consisted of examining two different variables to determine whether there is a dependence or relationship between them.
+   Change to the project directory:
 
-## Data visualization
-Data visualization plays a crucial role in data analysis, as it is the stage at which the conclusions drawn from the analysis are effectively communicated.
+   ```shell
+   cd Co2-emissions-exploratory-data-analysis
+   ```
 
-This stage focuses on creating visual representations of the insights gained during the analysis. The Python libraries Matplotlib and Seaborn were used for this purpose.
+2. **Install Dependencies**
 
-## Insights
+   Install the required dependencies listed in the `requirements.txt`:
 
-The main goal of this project is to explore the CO<sub>2</sub> dataset to find insightful data on carbon dioxide emissions, their evolution over the last 50 years and the factors influencing them.
+   ```shell
+   pip install -r requirements.txt
+   ```
 
-* __2021 the year with the highest CO<sub>2</sub> emissions__
+   This will install all necessary libraries such as pandas, numpy, matplotlib, and seaborn.
 
-Through this analysis, it was found that carbon dioxide emissions have been increasing over the last 50 years, with the year 2021 being the year of the highest CO<sub>2</sub> emissions. 
+3. **Run the Jupyter Notebook**
 
-![Distribution of carbon dioxide emissions over the last 50 years](https://github.com/user-attachments/assets/d61d55ac-0494-428a-a6c9-af29a2dfa6fc)
+   After installing the dependencies, you can run the Jupyter notebook to perform the data analysis. To start the notebook, use the following command:
 
-* __Asia was the continent that emitted most CO<sub>2</sub>__
+   ```shell
+   jupyter notebook notebooks/EDA-co2-emissions.ipynb
+   ```
 
-The continent that has produced the most CO<sub>2</sub> emissions over the last 50 years has been Asia, followed by Europe and North America. Since 1990, Europe has decreased its CO<sub>2</sub>  emissions, while North America has kept them stable and Asia has increased them dramatically. For this reason, Asia is the continent with the highest carbon dioxide emissions. Before 1990, Europe was the continent that emitted the most CO<sub>2</sub>.
+## 📁 Repository Structure
 
-![Carbon dioxide emissions by continent in the last 50 years](https://github.com/user-attachments/assets/9558cdfa-b354-4253-ad9f-d560bce374f7)
+```
+Co2-emissions-exploratory-data-analysis
+├── data/
+│   ├── raw/
+│   │   └── co2-emissions-dataset.csv          # Original dataset
+│   └── processed/
+│       └── co2-emissions-cleaned.csv          # Cleaned and preprocessed data
+├── figures/
+│   ├── co2-emissions-sources-heatmpa.png      # Sample visualization
+│   ├── correlation-heatmap.png                # Charts of top CO₂-emitting countries
+│   └── ...                                    # Additional plots from analysis
+├── requirements.txt                           # Requirements file
+├── notebooks/
+│   └── EDA-co2-emissions.ipynb                # Jupyter notebook with the full analysis
+└── README.md                                  # Project overview and documentation
+```
 
-![Evolution of carbon dioxide emission by continent in the last 50 years](https://github.com/user-attachments/assets/deda5ef4-33a3-47e6-850b-8c9a242d3343)
+## 🧠 Technical Skills
 
-* __The U.S. is the country that has emitted the most CO<sub>2</sub> in the last 50 years.__
+Throughout this project, the following skills were applied:
 
-The United States is the country that has emitted the most CO<sub>2</sub> in the last 50 years. While the U.S. has decreased its emission since 2008, China, on the contrary, has exponentially increased its emissions, becoming the top CO<sub>2</sub> emitter in 2021. On the other hand, Germany has been slowly decreasing its emission since 1990 to reach its lowest point in 2020.
+- Data loading and preprocessing
+- Exploratory data analysis (EDA)
+- Data visualization
+- Statistical analysis
 
-![World largest carbon dioxide emitters in the last 50 years](https://github.com/user-attachments/assets/05fbcf08-7b6f-4d3b-bbda-7e7b30e6dd77)
+## 📊 Dataset
 
-![U S  emissions in the last 50 years](https://github.com/user-attachments/assets/a4cd4ba3-3ab9-427f-913a-f31cbe162fb4)
+The dataset used for this analysis is a CSV file (`co2-emissions-dataset.csv`) containing:
 
-![China emissions in the last 50 years](https://github.com/user-attachments/assets/3b0e49e6-556d-4ab0-bad7-3700ee75c0e3)
+- 46,523 entries
+- 74 columns
 
-![Germany emissions in the last 50 years](https://github.com/user-attachments/assets/7dad55d5-146d-41f1-82ca-1bdaa9a5204b)
+## 📥 Data Loading
 
-* __Coal is the main source of CO<sub>2</sub> emissions__
+The dataset is loaded into a Pandas DataFrame using the following code:
 
-Coal is the main source of CO<sub>2</sub> emissions, followed by oil and gas. Since 2000, coal emissions have increased dramatically. This is due to increased emissions in China, which mainly uses coal as fuel. 
+```python
+import pandas as pd
 
-The main source of CO<sub>2</sub> emissions in the United States is oil and coal, while in China it is mainly coal, followed by a high amount of emissions from land use change. This is easily explained by the country's development and the deforestation and construction of new cities. Germany, as well as the United States, emits CO<sub>2</sub> mainly through coal and oil. It should not be forgotten that land use change in Germany is negative, which means that CO<sub>2</sub> from the atmosphere is captured and removed, thus reducing the amount of CO<sub>2</sub> in the atmosphere.
+df = pd.read_csv("data/raw/co2-emissions-dataset.csv")
+```
 
-![Evolution of carbon dioxide emission by source over the last 50 years](https://github.com/user-attachments/assets/164e9bfc-3de9-4be2-8e32-37d328f43d33)
+## 🧹 Data Cleaning
 
-![U S  sources of emissions](https://github.com/user-attachments/assets/7f12e3cf-4469-4d2b-aab3-a6091afbf8b3)
+Data cleaning involves:
 
-![China sources of emissions](https://github.com/user-attachments/assets/81ae2119-6342-4423-99a8-f732a1fdb3ce)
+- Removing unnecessary or duplicate columns
+- Renaming columns for clarity
+- Filtering data by year
+- Converting data types as needed
+- Handling missing or null values
 
-![Germany sources of emissions](https://github.com/user-attachments/assets/1b9b0e9f-4d18-4c34-9b6f-b7f514d56fa8)
+These steps ensure the dataset is ready for analysis.
 
-* __Land use change emissions__
+## 🔍 Data Exploration
 
-Land plays an important role in the global cycles of greenhouse gases such as carbon dioxide. Land use activities can lead to emissions of carbon dioxide into the atmosphere or its removal from the atmosphere. Positive emissions mean that carbon dioxide is emitted into the atmosphere, while negative emissions mean that carbon dioxide is captured and removed from the atmosphere.
+Exploratory data analysis (EDA) includes:
 
-The countries that contributed positively, i.e., emitted CO<sub>2</sub> into the atmosphere, through land use change were Brazil, Indonesia and China. On the other hand, the countries that contributed negatively, i.e. removed CO<sub>2</sub> from the atmosphere, were Italy, Poland and France. This is due to environmental policies in the European Union and the commitment to reduce carbon dioxide emissions into the atmosphere. 
+- **Univariate analysis**: Examining individual variables to understand their distribution and characteristics.
+- **Bivariate analysis**: Investigating relationships between two variables to identify correlations or dependencies.
 
-![Positive land use change emissions](https://github.com/user-attachments/assets/fb6e1ecc-7753-44e2-975c-6d50465992c4)
+## 📈 Data Visualization
 
-![Negative land use change emissions](https://github.com/user-attachments/assets/3298ec55-e9e4-47a9-92a5-7e599e36994a)
+Data visualization is crucial for communicating insights. This project uses `matplotlib` and `seaborn` to create various plots, including:
 
-* __GDP and population correlations__
+- Line charts to show trends over time
+- Bar charts for comparing emissions across countries and continents
+- Heatmaps to visualize correlations between variables
 
-During this study it was found that GDP has a strong positive correlation with total CO<sub>2</sub> emissions. Also, population has a moderate correlation with CO<sub>2</sub> total emissions.
+## 💡 Key Insights
 
-![Correlations GDP and total emissions](https://github.com/user-attachments/assets/8ccac41a-4d21-4f48-911e-30a0a2deef78)
+**2021 Was the Peak Year for CO₂ Emissions**
+CO₂ emissions have been increasing for decades, and 2021 marked the highest level recorded in the last 50 years.
 
-* __Sources of CO<sub>2</sub> emissions correlations__
+**Asia Is Now the Biggest Emitter**
+Since around 1990, Asia has taken the lead in global CO₂ emissions. Europe has steadily reduced its emissions, North America has remained fairly consistent, but Asia’s numbers have increased sharply.
 
-During this study it was found that coal, oil, gas, and other industries have a high correlation with the total emission of CO<sub>2</sub>.
+**The U.S. Has Emitted the Most Over Time** 
+Looking at the last five decades, the United States is the top historical emitter. While emissions there have dropped since 2008, China’s output has skyrocketed — and by 2021, it had overtaken the U.S.
 
-![Correlation sources vs total emissions](https://github.com/user-attachments/assets/6ddda813-9bb5-4bd0-b1e5-aa0fdf464829)
+**Coal Is the Largest Source of Emissions**
+Coal is by far the biggest contributor to CO₂ emissions, followed by oil and gas. China relies heavily on coal, while countries like the U.S. and Germany have a more mixed energy profile, using both coal and oil extensively.
 
+**Land Use Makes a Big Difference**
+Changes in land use — like deforestation or reforestation — can either increase or reduce emissions. Countries like Brazil and Indonesia are adding CO₂ through deforestation, while places like Italy and France are actually removing CO₂ thanks to greener land policies.
+
+**GDP and Emissions Go Hand in Hand**
+There’s a strong connection between how much a country produces economically (its GDP) and how much CO₂ it emits. In short: more production usually means more emissions.
+
+**Population Matters Too (But Not as Much as GDP)**
+Larger populations tend to emit more CO₂, but the correlation isn’t as strong as it is with economic activity. Still, it’s an important factor.
